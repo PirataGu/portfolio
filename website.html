@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gustavo Rosa · Portfolio</title>
+
+  <!-- Fonte moderna (Outfit) -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- PDF.js via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    // Configurar o worker do PDF.js
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  </script>
+</head>
+
+<body>
+
+  <!-- Top Navigation (Aba) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">Gustavo Rosa</div>
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- https://www.dropbox.com/scl/fi/avyasb04jcd64k3uvvncg/eusite.jpg?rlkey=ri7skd1fm6puw3tzfl6rxgeut&st=7lbeqt9i&dl=1  -->
+  <section class="hero" id="inicio">
+    <div class="hero-image-placeholder">
+      <img
+        src="https://www.dropbox.com/scl/fi/chexs4mo697bqa8tbegl5/eusite1.jpg?rlkey=hbzcwgy0vd9i09hr5y1atp7lc&st=fo2wvzu8&dl=1"
+        alt="Gustavo Rosa" id="hero-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Gustavo Rosa</h1>
+      <p>Engenharia Mecânica & Network Manager</p>
+      <a href="#projetos" class="btn-primary">Ver Trabalhos</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <p>Gustavo, estudante de Engenharia Mecânica no Instituto Superior Técnico. Tem experiência em
+          simulação de sistemas mecânicos, modelação em
+          SolidWorks, design dinâmico, Virtual Private Servers em Linux e em diversas linguagens de programação.</p>
+
+        <!-- Redes Sociais -->
+        <div class="social-links">
+          <a href="https://github.com/PirataGu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/gu.roz4/" target="_blank" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="mailto:gustavo.monteiro.rosa@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/gustavo-rosa-814a65352/" target="_blank" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Grid style) -->
+  <section class="section projects-section" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Trabalhos Realizados</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-pdf="reports\Relatório PFII PB23_2_-1.pdf">
+          <div class="card-image">
+            <img src="img/pf2.png" alt="Produção de Pinhão e suporte metálico">
+          </div>
+          <div class="card-body">
+            <h3>Produção de Pinhão e suporte metálico</h3>
+            <p>Produção em massa de um pinhão e suporte metálico. Gestão, planeamento da produção, controle de
+              qualidade, análise de custos. Fundição e Soldadura.</p>
+            <h6>2025 · Grupo</h6>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-pdf="reports\Group14-Project-Report.pdf">
+          <div class="card-image">
+            <img src="img/Group-14.png" alt="Housing Prices">
+          </div>
+          <div class="card-body">
+            <h3>Housing Prices</h3>
+            <p>Análise preditiva de preços de imóveis na cidade de Lisboa usando vários modelos preditivos (Machine
+              Learning).</p>
+            <h6>2025 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" data-pdf="reports\all_landing_gear_mashup.pdf">
+          <div class="card-image">
+            <img src="img/roda_capa.PNG" alt="Plane Landing Gear">
+          </div>
+          <div class="card-body">
+            <h3>Trem de Aterragem</h3>
+            <p>Análise cinemática, dinâmica de um sistema de aterragem de avião usando SolidWorks e MUBOKAP/MUBODAP em
+              MATLAB.</p>
+            <h6>2026 · Sozinho</h6>
+          </div>
+        </article>
+
+        <article class="project-card" data-pdf="reports\autonomous.pdf">
+          <div class="card-image">
+            <img src="img/autonomous.png" alt="Autonomous Driving Model">
+          </div>
+          <div class="card-body">
+            <h3>Autonomous Driving Model</h3>
+            <p>Modelo Machine Learning (CNN) com semantic segmentation treinado com imagens de estradas para deteção de
+              obstáculos, linhas de estrada etc...</p>
+            <h6>2026 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" data-pdf="reports\C_mashup.pdf">
+          <div class="card-image">
+            <img src="img/Drone.png" alt="Quadcopter Dynamics Simulation">
+          </div>
+          <div class="card-body">
+            <h3>Quadcopter Dynamics Simulation</h3>
+            <p>A partir de MATLAB, Simulink, simulação de trajetórias e dinâmica de um Drone e validação com Parrot
+              Drone.</p>
+            <h6>2026 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" data-pdf="reports\SA___Light_Sensor.pdf">
+          <div class="card-image">
+            <img src="img/LED.png" alt="LED and Photoresistor">
+          </div>
+          <div class="card-body">
+            <h3>LED and Photoresistor</h3>
+            <p>Estudo semi-profundado de sensores photoresistor e LEDs. Análise em laboratório.
+            </p>
+            <h6>2026 · Dupla</h6>
+          </div>
+        </article>
+
+
+
+
+
+        <!-- Unavailable Projects -->
+
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/mcomp.png" alt="Elementos finitos">
+          </div>
+          <div class="card-body">
+            <h3>Elementos finitos 2D</h3>
+            <p>Análise de elementos finitos numa viga. Estudo de modelos 2D. Estudo de elementos finitos
+              na deformação de vigas.</p>
+            <h6>2024 · Dupla</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/pf1.png" alt="Cabeça de martelo de ferradura">
+          </div>
+          <div class="card-body">
+            <h3>Produção de Cabeça de martelo de ferradura</h3>
+            <p>Produção unitária e em massa de cabeça de martelo de ferradura. Gestão, planeamento da produção,
+              controle de qualidade, análise de custos. Corte por arrombamento, forjamento (matriz aberta e fechada) e
+              maquinagem.</p>
+            <h6>2025 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/istgait.png" alt="ISTGait">
+          </div>
+          <div class="card-body">
+            <h3>ISTGait</h3>
+            <p>Prototipagem de uma palmilha inteligente com sensor de pressão e sistema de comunicação via bluetooth
+              para
+              análise de marcha e biomecânica. Projeto Final de Licenciatura.</p>
+            <h6>2025 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/omniant.png" alt="Omnidirectional Robot">
+          </div>
+          <div class="card-body">
+            <h3>Omnidirectional Robot</h3>
+            <p>Application of modelling concepts to a three wheeled
+              omnidirectional mobile robot. Sensors, actuators, estimation and path planning solutions.
+            </p>
+            <h6>2025 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/bernoullidesenho.png" alt="Energias Renováveis">
+          </div>
+          <div class="card-body">
+            <h3>Energias Renováveis - Central Hidroelétrica</h3>
+            <p>Proposta técnico-económica para a implementação de
+              uma central hidroelétrica integrada com um parque solar e eólico já existente.
+            </p>
+            <h6>2026 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/cone.png" alt="Cone Detection">
+          </div>
+          <div class="card-body">
+            <h3>Cone Detection</h3>
+            <p>Deteção de cones usando apenas métodos tradicionais de visão computação. (Sem auxílio de Machine
+              Learning)
+            </p>
+            <h6>2026 · Grupo</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório não se encontra disponível.')">
+          <div class="card-image">
+            <img src="img/motorcycleassembly_v2.PNG" alt="Motorcycle Assembly">
+          </div>
+          <div class="card-body">
+            <h3>Suspensão de Mota</h3>
+            <p>Simulação e animação 2D de um sistema de suspensão de mota em diversas situações do dia a dia de modo a
+              projetar uma mota.</p>
+            <h6>2026 · Dupla</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório está ainda a ser desenvolvido!')">
+          <div class="card-image">
+            <img src="img/andromedapvp.png" alt="AndromedaPVP">
+          </div>
+          <div class="card-body">
+            <h3>AndromedaPVP</h3>
+            <p>Virtual Private Server em Linux (Ubuntu) com diversos projetos realizados sendo um dos principais:
+              Network de Jogos.</p>
+            <h6>2020-2026</h6>
+          </div>
+        </article>
+
+        <article class="project-card" style="cursor: not-allowed; opacity: 0.6;"
+          onclick="alert('Este relatório está ainda a ser desenvolvido!')">
+          <div class="card-image">
+            <img src="img/robotic-arm.png" alt="Surgical Manipulator">
+          </div>
+          <div class="card-body">
+            <h3>Surgical Manipulator</h3>
+            <p>Análise cinemática e dinâmica de um manipulador cirúrgico inspirado no modelo KUKA LBR
+              MED.</p>
+            <h6>2026 · Dupla</h6>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer 
+  <footer class="footer" id="contactos">
+    <div class="container">
+      <p>© 2026 Gustavo Monteiro Rosa. Todos os direitos reservados.</p>
+    </div>
+  </footer> -->
+
+  <!-- PDF Modal (Janela Pop-up de Leitura) -->
+  <div id="pdf-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+
+      <div class="pdf-controls">
+        <button id="first-page" class="btn-pdf">Primeira Página</button>
+        <span class="page-info">Página: <span id="page-num"></span> / <span id="page-count"></span></span>
+        <button id="last-page" class="btn-pdf">Última Página</button>
+      </div>
+
+      <div class="pdf-viewer-container">
+        <button id="prev-page-side" class="side-btn-pdf left-arrow">&#10094;</button>
+
+        <!-- O canvas não pode ser selecionado e previne botão direito via CSS/JS -->
+        <canvas id="pdf-render" class="protected-canvas"></canvas>
+
+        <button id="next-page-side" class="side-btn-pdf right-arrow">&#10095;</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
