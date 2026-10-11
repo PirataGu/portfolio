@@ -14,10 +14,10 @@ window.addEventListener('scroll', () => {
 const heroImg = document.getElementById('hero-img');
 if (heroImg) {
   // Randomizar a imagem de fundo
-  if (Math.random() > 0.20) {
-    heroImg.src = "https://www.dropbox.com/scl/fi/avyasb04jcd64k3uvvncg/eusite.jpg?rlkey=ri7skd1fm6puw3tzfl6rxgeut&st=7lbeqt9i&dl=1";
+  if (Math.random() > 0.60) {
+    heroImg.src = "https://www.dropbox.com/scl/fi/tw7n7n83poqlro6zd3y4g/eusite2.jpg?rlkey=6i73xzbo8kmjies5g9s74b9uq&st=bsd7ux72&dl=1";
   } else {
-    heroImg.src = "https://www.dropbox.com/scl/fi/chexs4mo697bqa8tbegl5/eusite1.jpg?rlkey=hbzcwgy0vd9i09hr5y1atp7lc&st=fo2wvzu8&dl=1";
+    heroImg.src = "https://www.dropbox.com/scl/fi/avyasb04jcd64k3uvvncg/eusite.jpg?rlkey=ri7skd1fm6puw3tzfl6rxgeut&st=c66fxl6s&dl=1";
   }
 
   // Se já estiver carregada (cache), anima logo
